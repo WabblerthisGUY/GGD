@@ -1,0 +1,27 @@
+#landing-img {
+    background: url('IMG_9985.jpg');
+    background-position: center;
+
+    height: 100vh;
+    object-fit: cover;
+}
+
+html, body {
+    height: 100%;
+}
+
+#landing-left {
+    background-color: rgb(0,54,98, 0.5);
+}
+
+#landing-right {
+    background-color: rgb(255,158,13, 0.5);
+}
+
+#landing-content {
+    z-index: 10;
+}
+
+.z-1 {
+    z-index: 1;
+}
