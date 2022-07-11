@@ -1,7 +1,7 @@
-#landing-img {
-    background: url('IMG_9985.jpg');
+.home-image {
+    background: var(--img-url);
     background-position: center;
-
+    position: relative;
 
     max-width:100%;
     height: auto; 
@@ -13,7 +13,6 @@
 #overlay {
     position: absolute;
     clip-path: polygon(0 0, 60% 0%, 50% 100%, 0 100%);
-    background-color: rgb(0,54,98, 0.8);
     top: 0;
     height: 100%;
     width: 100%;
@@ -29,12 +28,4 @@ html, body {
     float: right;
     height: 100%;
     width: 100%;
-}
-
-.large-text {
-    font-size: 5vmin;
-}
-
-.subtext {
-    font-size: 2vmin;
 }
