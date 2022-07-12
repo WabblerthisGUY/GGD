@@ -8,6 +8,8 @@
     padding-top: 54.171961%; /* img-height / img-width * 100%*/
     background-size:     cover;                      /* <------ */
     background-repeat:   no-repeat;
+
+    color: white;
 }
 
 #overlay {
@@ -28,4 +30,8 @@ html, body {
     float: right;
     height: 100%;
     width: 100%;
+}
+
+.cover {
+    object-fit: cover;
 }
