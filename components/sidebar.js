@@ -61,21 +61,21 @@ sidebarTemplate.innerHTML = `
     <span class="material-symbols-outlined text-white" id="open-sidebar" onclick="openSidebar()">
       menu
     </span>
-    <nav id="sidebar" class="bg-primary text-white ps-4 pt-4">
+    <nav id="sidebar" class="bg-primary text-white px-4 pt-4">
       <h4>Grey Ghost Division & T.S. Kearsarge</h1>
       <ul class="list-unstyled">
         <li>
           <a href="./">Home</a>
         </li>
         <li>
-          <a href="members.html">Cadets/Parents</a>
+          <a href="cadets.html">Cadets/Parents</a>
           <ul class="list-unstyled ps-4">
             <li><a href="">POD</a></li>
             <li><a href="">Calendar</a></li>
             <li><a href="">Announcements</a></li>
             <li><a href="">Chain of Command</a></li>
             <li><a href="">Supply</a></li>
-            <li><a href="">Study</a></li>
+            <li><a href="">Resources</a></li>
             <li><a href="">POD</a></li>
             <li><a href="https://quarterdeck.seacadets.org/">Quarterdeck</a></li>
             <li><a href="">Payment</a></li>
