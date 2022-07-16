@@ -72,7 +72,7 @@
         div.classList.add("col", "text-center", "text-primary");
         div.innerHTML = `
         <h1>${staff.title}</h1>
-        <img src="${staff.portraitUrl}">
+        <img src="${staff.portraitUrl}" class="img-fluid">
         <h2>${staff.name}<br>${staff.rank}</h2>
         <p class="fst-italic fs-4">"${staff.quote}"</p>`;
         staffList.appendChild(div);

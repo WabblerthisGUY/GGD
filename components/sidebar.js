@@ -75,7 +75,7 @@
               <li><a href="">POD</a></li>
               <li><a href="">Calendar</a></li>
               <li><a href="">Announcements</a></li>
-              <li><a href="">Chain of Command</a></li>
+              <li><a href="staff.html">Chain of Command</a></li>
               <li><a href="">Supply</a></li>
               <li><a href="">Resources</a></li>
               <li><a href="">POD</a></li>
@@ -84,7 +84,7 @@
             </ul>
           </li>
           <li>
-            <a href="prospective-cadets.html">Prospective Cadets</a>
+            <a href="prospect.html">Prospective Cadets</a>
           </li>
         </ul>
       </nav>
