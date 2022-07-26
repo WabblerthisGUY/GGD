@@ -10151,4 +10151,12 @@ h6, .h6 {
   font-family: "Oswald", sans-serif;
 }
 
+blockquote {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.5rem;
+  font-style: italic;
+  text-align: center;
+  margin: 2rem 0 0 0;
+}
+
 /*# sourceMappingURL=custom-bs.css.map */

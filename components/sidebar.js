@@ -78,7 +78,7 @@
               <li><a href="staff.html">Chain of Command</a></li>
               <li><a href="">Supply</a></li>
               <li><a href="">Resources</a></li>
-              <li><a href="">POD</a></li>
+              <li><a href="pod.html">POD</a></li>
               <li><a href="https://quarterdeck.seacadets.org/">Quarterdeck</a></li>
               <li><a href="">Payment</a></li>
             </ul>
