@@ -76,7 +76,7 @@
               <li><a href="">Calendar</a></li>
               <li><a href="">Announcements</a></li>
               <li><a href="staff.html">Chain of Command</a></li>
-              <li><a href="">Supply</a></li>
+              <li><a href="supply.html">Supply</a></li>
               <li><a href="">Resources</a></li>
               <li><a href="pod.html">POD</a></li>
               <li><a href="https://quarterdeck.seacadets.org/">Quarterdeck</a></li>
