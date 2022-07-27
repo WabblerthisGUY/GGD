@@ -43,6 +43,7 @@
               opacity: 0;
               /* animate the transition */
               transition: all 0.5s ease-in-out;
+              left: 0;
           }
           /* display .overlay when it has the .on class */
           #darken.on {
@@ -72,19 +73,21 @@
           <li>
             <a href="cadets.html">Cadets/Parents</a>
             <ul class="list-unstyled ps-4">
-              <li><a href="">POD</a></li>
+              <li><a href="pod.html">POD</a></li>
               <li><a href="">Calendar</a></li>
               <li><a href="">Announcements</a></li>
-              <li><a href="staff.html">Chain of Command</a></li>
+              <li><a href="chainofcommand.html">Chain of Command</a></li>
               <li><a href="supply.html">Supply</a></li>
               <li><a href="">Resources</a></li>
-              <li><a href="pod.html">POD</a></li>
               <li><a href="https://quarterdeck.seacadets.org/">Quarterdeck</a></li>
               <li><a href="">Payment</a></li>
             </ul>
           </li>
           <li>
             <a href="prospect.html">Prospective Cadets</a>
+          </li>
+          <li>
+            <a href="staff.html">Officers</a>
           </li>
         </ul>
       </nav>

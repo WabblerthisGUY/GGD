@@ -10156,7 +10156,11 @@ blockquote {
   font-size: 1.5rem;
   font-style: italic;
   text-align: center;
-  margin: 2rem 0 0 0;
+  margin: 2rem 0;
+}
+
+header-component + * {
+  padding-top: 56px;
 }
 
 /*# sourceMappingURL=custom-bs.css.map */
