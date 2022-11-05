@@ -3,29 +3,35 @@
     const footerTemplate = document.createElement('template');
   
     footerTemplate.innerHTML = `
-    <link href="custom-bs/custom-bs.css" rel="stylesheet">
-  
-    <footer class="py-2 text-center text-white bg-black">
-        <div class="row g-0">
-            <img class="col-2 offset-2 col-md-1 offset-md-4" src="img/USNSCC.png">
-            <img class="col-2 col-md-1" src="img/GGD.webp">
-            <img class="col-2 col-md-1" src="img/TSK.png">
-            <img class="col-2 col-md-1" src="img/NLCC.png">
+    <footer class="bg-black container-fluid p-5">
+      <div class="row text-white fw-bold mb-4">
+        <div class="offset-1 col-5">Grey Ghost Division/Training Ship Kearsarge</div>
+        <div class="offset-1 col-5">Follow Us</div>
+      </div>
+      <div class="row text-white-50 pb-5">
+        <div class="offset-1 col-5">
+          <a href="./" class="text-reset text-decoration-none">Home</a><br>
+          <a href="" class="text-reset text-decoration-none">About us</a><br>
+          <a href="staff.html" class="text-reset text-decoration-none">Meet our staff</a><br>
+          <a href="resources.html" class="text-reset text-decoration-none">Resources</a><br>
+          <a href="https://quarterdeck.seacadets.org/" class="text-reset text-decoration-none">Quarterdeck</a><br>
         </div>
-        <h4>United States Naval Sea Cadet Corps</h3>
-        <h6>Grey Ghost Division and Training Ship Kearsarge</h5>
-      </footer>
+        <div class="offset-1 col-5">
+          <a href="" class="text-reset fs-4"><i class="bi bi-facebook"></i></a>
+          <a href="" class="text-reset fs-4"><i class="bi bi-instagram"></i></a>
+          <br>
+          <button class="btn btn-outline-light mt-2">JOIN US</button>
+        </div>
+      </div>
+    </footer>
     `;
-    var shadowRoot;
     class Footer extends HTMLElement {
       constructor() {
         super();
       }
   
-      connectedCallback() {
-        shadowRoot = this.attachShadow({ mode: 'closed' });
-  
-        shadowRoot.appendChild(footerTemplate.content);
+      connectedCallback() {  
+        this.innerHTML = footerTemplate.innerHTML;
       }
     }
   

@@ -25,6 +25,7 @@ $font-family-sans-serif:
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 
 @import "../node_modules/bootstrap/scss/bootstrap";
+@import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
 @for $i from 1 through 6 {
     .display-#{$i} {
         font-family: 'Oswald', sans-serif;
