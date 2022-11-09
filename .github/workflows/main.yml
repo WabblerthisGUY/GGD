@@ -1,0 +1,21 @@
+name: Deploy to GitHub Pages
+
+# Run workflow on every push to the master branch
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    
+    - name: Change base tag to GGD
+      run: find . -name "*.html" -exec sed -i 's/<base href="\/">/<base href="\/GGD\/">/g' {} +
+      
+    - name: Deploy to GitHub Pages
+      uses: JamesIves/github-pages-deploy-action@v4.4.1
+      with:
+        folder: .
+        branch: gh-pages
