@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans&family=Oswald&display=swap');
+
+$primary: #003662;
+$secondary: #FA9D31;
+$info: #2563EB;
+
+$font-family-sans-serif:
+    "Helvetica Neue",
+    // Cross-platform generic font family (default user interface font)
+    system-ui,
+    // Safari for macOS and iOS (San Francisco)
+    -apple-system,
+    // Windows
+    "Segoe UI",
+    // Android
+    Roboto,
+    // Basic web fallback
+    Arial,
+    // Linux
+    "Noto Sans",
+    "Liberation Sans",
+    // Sans serif fallback
+    sans-serif,
+    // Emoji fonts
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
+@for $i from 1 through 6 {
+    .display-#{$i} {
+        font-family: 'Oswald', sans-serif;
+    }
+    h#{$i} {
+        font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
+    }
+}
+
+blockquote {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    font-style: italic;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+header-component + * {
+    padding-top:56px;
+}

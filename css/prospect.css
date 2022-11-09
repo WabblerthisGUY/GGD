@@ -1,0 +1,112 @@
+.descriptor {
+    display: flex;
+    position: relative;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    gap: 2rem;
+}
+.descriptor > img {
+    content: var(--img);
+}
+.descriptor > * {
+    width: 50%;
+    flex: 1 1 0;
+}
+.descriptor > div {
+    display:flex;
+    align-items:center;
+    text-align: center;
+}
+.descriptor > div > span > b {
+    color: var(--bs-secondary);
+    font-weight: 600;
+    display: inline;
+}
+.descriptor:nth-of-type(even) {
+    flex-direction: row-reverse;
+}
+@media(max-width: 768px) {
+    .descriptor:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0,0,0, 0.75);
+    }
+
+    .descriptor > div {
+        position: absolute;
+        top:0;
+        bottom:0;
+        left:0;
+        right:0;
+        width: 100%;
+        padding: 0.5rem;
+    }
+}
+
+.thing-to-know {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items:center;
+    text-align: center;
+    padding: 1.5rem 1.5rem 0;
+}
+.thing-to-know:nth-of-type(even) {
+    background-color: var(--bs-primary);
+    color: white;
+}
+.thing-to-know:nth-of-type(even) > h2 {
+    color: var(--bs-secondary);
+}
+.thing-to-know:nth-of-type(odd) {
+    background-color: var(--bs-light);
+}
+.thing-to-know > .row {
+    margin: 2rem 0;
+    row-gap: 2rem;
+    width: 80%;
+    font-size: 1.25rem;
+}
+.thing-to-know h2 {
+    font-weight: 600;
+}
+.thing-to-know > figure {
+    position: relative;
+}
+.thing-to-know > figure > h2 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    color: white;
+}
+@media(max-width: 768px) {
+    .thing-to-know > figure {
+        order: -1;
+        width: 70%;
+    }
+
+    .thing-to-know > figure::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0,0,0, 0.75);
+    }
+    .thing-to-know > h2 {
+        display: none;
+    }
+    .thing-to-know > figure > h2 {
+        display: flex;
+        align-items:center;
+        justify-content: center;
+    }
+}

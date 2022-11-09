@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <base href="/">
+
+    <link href="custom-bs/custom-bs.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script src="/js/components/header.js" defer></script>
+    <script src="/js/protectedui.js"></script>
+    <style>
+        input:focus{outline: none;}
+    </style>
+
+    <title>Password Protected</title>
+  </head>
+  <body class="bg-black" onkeypress="checkSubmit(event)">
+    <header-component>
+      Cadet Portal
+    </header-component>
+    <div class="text-center text-white mt-md-5 d-flex flex-column align-items-center" style="gap: 1rem;">
+        <div class="material-symbols-outlined text-white" style="font-size: 6rem;">
+            lock
+        </div>
+        <h3 class="mb-2">Grey Ghost & Kearsarge</h3>
+        <div class="display-1 mb-2 px-2">PASSWORD PROTECTED</div>
+        <div class="lead w-75 mb-3">
+            Hi! You are currently trying to access information only available to the unit's cadets, parents, and officers. 
+            If you are a visitor, we encourage you to take a look around or join us!
+        </div>
+
+        <div class="d-flex w-50 align-items-center bg-white rounded-1">
+            <input type="text" class="form-control flex-grow-1 border-0" placeholder="Password" id="password">
+            <div class="btn bg-none material-symbols-outlined p-0 me-1" style="height: 24px;" onclick="validate()">
+                arrow_circle_right
+            </div>
+        </div>
+        <div class="text-danger d-none" id="fail">Try again.</div>
+        <div class="lead mt-2 mt-md-5">
+            Forgot your password? Shoot us an email.
+        </div>
+    </div>
+
+
+  </body>
+</html>

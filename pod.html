@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <base href="/">
+
+    <link href="custom-bs/custom-bs.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/js/protected.js"></script>
+
+    <script src="/js/components/header.js" defer></script>
+
+    <title>POD</title>
+  </head>
+  <body class="bg-light container">
+    <header-component>
+      Plan of the Day
+    </header-component>
+    <blockquote>
+        Be in the right place, at the right time, in the right uniform.
+    </blockquote>
+    <p class="mt-2 text-center text-danger">
+        The calendar for the entire year can be found in the Calendar page on the portal. 
+        Make necessary arrangements ahead of time so that you don't miss drill—100% attendance is required!
+    </p>
+    <button class="btn btn-outline-primary mb-2" href="assets/pod.pdf">Download the POD</button>
+    <div class="row">
+      <iframe class="col-md-8" style="min-height: 70vh;" src="/assets/pod.pdf"></iframe>
+      <div class="col-md-4">
+        <dl>
+          <dt>Instructions:</dt>
+          <style>
+            dd {display: list-item;margin-left: 1rem;}
+          </style>
+          <dd>Read and print the POD.</dd>
+          <dd>Pack your seabag using the item list on the POD.</dd>
+          <dd>Bring a mask and hand sanitzer.</dd>
+          <dd>Bring your own lunch for Saturday.</dd>
+        </dl>
+        <p class="border-start border-4 ps-2">
+          <b>100% Attendance is mandatory</b>, especially for those in a position of authority. 
+          If you don't come to drill, it disrupts the entire operation in a way that someone else must carry your load. 
+          Requests for time off must be made through the chain of command. 
+          If you don't know what the chain of command is, you probably missed drill. 
+          All requests must be approved in writing by the Commanding Officer or your absence will be marked unexcused. 
+          Our goal is to provide the best training available to help you to prepare for your future, and to prepare as a team.
+        </p>
+        <p class="border-start border-4 ps-2">
+          <b>The Plan of the Day</b> is an official document of Grey Ghost Division and Training Ship Kearsarge.
+          Its contents reflect current orders of the Commanding Officer and official unit announcements.
+          All division personnel are responsible for reading and understanding the information contained herein. 
+          Parents and guardians of cadets are encouraged to read the Plan of the Day and to make note of meeting days and 
+          special announcements that may affect personal schedules.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

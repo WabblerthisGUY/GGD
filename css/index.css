@@ -1,0 +1,34 @@
+.home-image {
+    background: var(--img-url);
+    background-position: center;
+    position: relative;
+
+    max-width:100%;
+    height: auto; 
+    padding-top: 54.171961%; /* img-height / img-width * 100%*/
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+
+    color: white;
+}
+
+#overlay {
+    position: absolute;
+    clip-path: polygon(0 0, 60% 0%, 50% 100%, 0 100%);
+    top: 0;
+    height: 100%;
+    width: 100%;
+
+}
+
+img {
+    object-fit: cover;
+}
+
+.shapeout {
+    shape-outside: polygon(60% 0, 100% 0, 100% 100%, 50% 100%);
+    float: right;
+    height: 100%;
+    width: 100%;
+}
+

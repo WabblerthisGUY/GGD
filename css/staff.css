@@ -1,0 +1,8 @@
+#staff-list > :last-child{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+html, body{
+    width: 100%;
+}
