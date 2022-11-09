@@ -12,7 +12,7 @@ function validate() {
         //console.log(params.redirect);
         //60 sec to a minute, 60 minute to an hour. 24 hours to a day, 10 days.
         document.cookie = "authorized=true; max-age=" + 60 * 60 * 24 * 10;
-        window.location.replace(params.redirect);
+        window.location.replace(document.baseURI + params.redirect);
     }
     else  {
         document.getElementById("fail").classList.remove("d-none");
