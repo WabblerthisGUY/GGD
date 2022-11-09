@@ -12,7 +12,7 @@ jobs:
     - uses: actions/checkout@v2
     
     - name: Change base tag to GGD
-      run: find . -name "*.html" -exec sed -i 's/<base href="\/" \/>/<base href="\/GGD\/" \/>/g' {}
+      run: find . -name "*.html" -exec sed -i 's/<base href="\/" \/>/<base href="\/GGD\/" \/>/g' {} +
       
     - name: Deploy to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@v4.4.1
