@@ -19,7 +19,7 @@
     <nav class="navbar navbar-dark navbar-expand-sm bg-primary fixed-top">
       <div class="container-fluid">
         <div class="navbar-brand">
-            <a href="index.html"><img src="/img/GGD.webp" alt="" width="24" height="24" class="d-inline-block align-text-top"></a>
+            <a href="index.html"><img src="img/GGD.webp" alt="" width="24" height="24" class="d-inline-block align-text-top"></a>
             <b><slot>Grey Ghost Division</slot></b>
         </div>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup">
